@@ -1,0 +1,36 @@
+* nixut.el
+#+BEGIN_HTML
+<a href="https://github.com/akirak/nixut.el/actions">
+<img src="https://github.com/akirak/nixut.el/workflows/nixut%20CI/badge.svg" alt="CI status">
+</a>
+#+END_HTML
+
+This Emacs package is a collection of utilities which was initially imported from [[https://github.com/akirak/melpa-check/][melpa-check]].
+
+It currently contains trivial functions related to JSON, processes, and Nix.
+** Table of contents
+:PROPERTIES:
+:TOC: siblings
+:END:
+-  [[#installation][Installation]]
+-  [[#usage][Usage]]
+-  [[#license][License]]
+
+** Installation
+This package is not available on MELPA yet.
+** Usage
+Simply require =nixut= and use individual functions as needed.
+** Also see
+- [[https://github.com/alphapapa/unpackaged.el][unpackaged.el]]
+- [[https://github.com/alphapapa/elexandria][elexandria]]
+- [[https://github.com/alphapapa/emacs-package-dev-handbook][emacs-package-dev-handbook]]
+** License
+GPL v3
+** COMMENT Meta :noexport:
+:PROPERTIES:
+:TOC:      ignore
+:END:
+# The COMMENT keyword prevents GitHub's renderer from showing this entry.
+# Local Variables:
+# eval: (when (require (quote org-make-toc) nil t) (org-make-toc-mode t))
+# End:
