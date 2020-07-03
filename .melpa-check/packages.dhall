@@ -15,7 +15,7 @@ in  [ Package::{
       , mainFile = Some "nix-browse.el"
       , recipe =
           ''
-          (nix-browse :fetcher github :repo "akirak/emacs-nix-bookmark" :files ("nix-bookmark.el" "nix-browse.el"))
+          (nix-browse :fetcher github :repo "akirak/emacs-nix-extras" :files ("nix-bookmark.el" "nix-browse.el"))
           ''
       }
     , Package::{
@@ -28,7 +28,20 @@ in  [ Package::{
       , testExcludes = [ "**/test-helper?(s).el" ]
       , recipe =
           ''
-          (nixut :fetcher github :repo "akirak/emacs-nix-bookmark" :files ("nixut.el"))
+          (nixut :fetcher github :repo "akirak/emacs-nix-extras" :files ("nixut.el"))
+          ''
+      }
+    , Package::{
+      , pname = "nemo"
+      , version = "0.1"
+      , emacsVersion = "26.1"
+      , files = [ "nemo.el" ]
+      , dependencies = [] : List Text
+      , testDrivers = [ TestDriver.buttercup ]
+      , buttercupTests = [ "nemo-tests.el" ]
+      , recipe =
+          ''
+          (nemo :fetcher github :repo "akirak/emacs-nix-extras" :files ("nemo.el"))
           ''
       }
     ]
