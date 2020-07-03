@@ -6,7 +6,7 @@
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "25.1"))
 ;; Keywords: processes
-;; URL: https://github.com/akirak/nixut.el
+;; URL: https://github.com/akirak/emacs-nix-extras
 
 ;; This file is not part of GNU Emacs.
 
