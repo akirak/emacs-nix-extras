@@ -87,7 +87,7 @@
 SRCFILE should be an Emacs Lisp file containing `use-package' forms.
 This function reads a list of package names contained in the file and
 transforms it into a list of installed packages needed for those
-packages.
+packages, and saves the result to OUTFILE.
 
 To customize the output format, you can set an OPEN bracket, a CLOSE
 bracket, and a SEPARATOR for the generated list."
